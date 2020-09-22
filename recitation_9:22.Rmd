@@ -1,0 +1,16 @@
+---
+title: "recitation_9/22"
+author: "Ana Castaner"
+date: "9/22/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+
+```
+
+
