@@ -114,7 +114,7 @@ ugrad_diff <- inner_join(sep_old, sep_new, by = "id") %>%
 ugrad_diff %>% 
   ggplot(aes(title.x, abs(diff))) +
   geom_col() +
-  facet_wrap(~sign) +
+  facet_wrap(~sign, scales = "free") +
   coord_flip() +
   theme_bw()
   

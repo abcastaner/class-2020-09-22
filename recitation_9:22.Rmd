@@ -7,10 +7,22 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(gganimate)
+library(gifski)
+theme_set(theme_bw())
 ```
+
+
 
 ```{r}
+#create static plot first
+p <- ggplot(gapminder,
+            aes())
+            
+#transition 
+p <- p + transition_time(year) +
+  labs(title = "Year: {frame_time}")
+            
 
 ```
-
 
